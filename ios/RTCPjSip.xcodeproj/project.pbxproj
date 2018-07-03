@@ -9,16 +9,17 @@
 /* Begin PBXBuildFile section */
 		A61DD9FB1E66BE9300278F2D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A61DD9FA1E66BE9300278F2D /* AVFoundation.framework */; };
 		A6259A861E69889E0089146B /* PjSipMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = A6259A851E69889E0089146B /* PjSipMessage.m */; };
+		A6D3BE311E6845AF00949DCF /* VialerPJSIP in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D3BE301E6845AF00949DCF /* VialerPJSIP */; };
 		A6D8F1201E65E482007D5702 /* CallKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D8F11F1E65E482007D5702 /* CallKit.framework */; };
 		A6F413A01E38CE9600340CC2 /* PjSipAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F413931E38CE9600340CC2 /* PjSipAccount.m */; };
 		A6F413A11E38CE9600340CC2 /* PjSipCall.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F413951E38CE9600340CC2 /* PjSipCall.m */; };
 		A6F413A31E38CE9600340CC2 /* PjSipEndpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F413991E38CE9600340CC2 /* PjSipEndpoint.m */; };
 		A6F413A41E38CE9600340CC2 /* PjSipModule.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F4139B1E38CE9600340CC2 /* PjSipModule.m */; };
 		A6F413A51E38CE9600340CC2 /* PjSipUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F4139D1E38CE9600340CC2 /* PjSipUtil.m */; };
-		D0A39A6F20EBF80200136FB0 /* VialerPJSIP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A39A6E20EBF80200136FB0 /* VialerPJSIP.framework */; };
 		DD8F1BDB1F58910A00714D48 /* PjSipVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8F1BDA1F58910A00714D48 /* PjSipVideo.m */; };
 		DD8F1BDE1F5895D900714D48 /* PjSipRemoteVideoViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8F1BDD1F5895D900714D48 /* PjSipRemoteVideoViewManager.m */; };
 		DD8F1BE11F58974C00714D48 /* PjSipPreviewVideoViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8F1BE01F58974C00714D48 /* PjSipPreviewVideoViewManager.m */; };
+		FD906A282012546C0066368D /* VialerPJSIP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD906A272012546C0066368D /* VialerPJSIP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,7 +50,6 @@
 		A6F4139B1E38CE9600340CC2 /* PjSipModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PjSipModule.m; sourceTree = "<group>"; };
 		A6F4139C1E38CE9600340CC2 /* PjSipUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PjSipUtil.h; sourceTree = "<group>"; };
 		A6F4139D1E38CE9600340CC2 /* PjSipUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PjSipUtil.m; sourceTree = "<group>"; };
-		D0A39A6E20EBF80200136FB0 /* VialerPJSIP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VialerPJSIP.framework; path = ../release/ios/VialerPJSIP.framework; sourceTree = "<group>"; };
 		DD8F1BD91F5890FB00714D48 /* PjSipVideo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PjSipVideo.h; sourceTree = "<group>"; };
 		DD8F1BDA1F58910A00714D48 /* PjSipVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PjSipVideo.m; sourceTree = "<group>"; };
 		DD8F1BDC1F5895CF00714D48 /* PjSipRemoteVideoViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PjSipRemoteVideoViewManager.h; sourceTree = "<group>"; };
@@ -67,7 +67,8 @@
 			files = (
 				A61DD9FB1E66BE9300278F2D /* AVFoundation.framework in Frameworks */,
 				A6D8F1201E65E482007D5702 /* CallKit.framework in Frameworks */,
-				D0A39A6F20EBF80200136FB0 /* VialerPJSIP.framework in Frameworks */,
+				FD906A282012546C0066368D /* VialerPJSIP.framework in Frameworks */,
+				A6D3BE311E6845AF00949DCF /* VialerPJSIP in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +78,6 @@
 		A6A12F5D1E65A8400002151D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D0A39A6E20EBF80200136FB0 /* VialerPJSIP.framework */,
 				A6D3BE301E6845AF00949DCF /* VialerPJSIP */,
 				FD906A272012546C0066368D /* VialerPJSIP.framework */,
 				A61DD9FA1E66BE9300278F2D /* AVFoundation.framework */,
@@ -298,7 +298,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/VialerPJSIP.framework",
-					"$(PROJECT_DIR)/release/ios/VialerPJSIP.framework",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -324,7 +323,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/VialerPJSIP.framework",
-					"$(PROJECT_DIR)/release/ios/VialerPJSIP.framework",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
