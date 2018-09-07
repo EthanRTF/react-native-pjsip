@@ -199,11 +199,16 @@ export default class Endpoint extends EventEmitter {
     registerAccount(account, renew = true) {
         return new Promise(function(resolve, reject) {
             NativeModules.PjSipModule.registerAccount(account.getId(), renew, (successful, data) => {
-                if (successful) {
-                    resolve(data);
-                } else {
-                    reject(data);
-                }
+
+        const dataWithSuccess = { success: successful }
+
+        resolve(dataWithSuccess)
+                
+                //  if (successful) {
+              //      resolve(data);
+              //  } else {
+              //      reject(data);
+              //  }
             });
         });
     }
